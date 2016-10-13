@@ -1586,7 +1586,7 @@ you can use the generic selector below, but it's slower:
 	}
 	.top-bar,
 	.top-bar-section ul{
-		background: white !important;
+		background: #ddfee4 !important;
 	}
 	.top-bar-section li a:not(.button) {
 		background: white !important;
