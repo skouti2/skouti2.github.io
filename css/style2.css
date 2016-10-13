@@ -116,7 +116,7 @@ h2 {
 /* Header */
 header {
 	text-align: center;
-	padding: 60px 0 0;
+	padding: 100px 0 0;
 	background-color: #58bc80;
 	color: white;
 	margin-top: 78px;
@@ -198,7 +198,7 @@ header .map {
 }
 /* Slider */
 .texture {background: url(../img/textures/stripes.png) repeat;height: 100%;width: 100%; position: absolute;top:0;left:0}
-#header {background:url(../img/tstbg2.png) no-repeat -509px -391px !important; }
+#header {background:url(../img/tstbg2.png) no-repeat -509px -100px !important; }
 #teaser-slider-2 {
 /*	background-image: url(../img/handphone.png); */
 	background-image: url(../img/handphone2.png);
@@ -225,7 +225,10 @@ header .map {
 	background-image:url(../img/button.png);
 /*	background-size: 200px 64px; */
 	float:left;
-	margin:20px 0 0 0px;
+/*	margin:20px 20px 20px 0px; */
+	margin-bottom: 20px;
+	margin-left: 40px;
+	margin-top: 20px;
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -233,7 +236,8 @@ header .map {
 	-ms-border-radius:3px
 }
 .download-btn:hover {
-	background-color:rgba(0,0,0,.25);
+/*	background-color:rgba(0,0,0,.25); */
+	background-color: #f816eb;
 	background-color:111
 }
 
@@ -382,7 +386,7 @@ color: #f06060;
 .section.selectoma {
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
-	background: url(../img/tstbg.png) no-repeat -509px -391px !important;
+	background: url(../img/tstbg2.png) no-repeat -509px -391px !important;
 }
 .section .subheading {
 	font-size: 20px;
@@ -1583,10 +1587,16 @@ you can use the generic selector below, but it's slower:
 	}
 }
 @media (max-width: 767px) {
-	#top {
+/*	#top {
 		position: static !important; 
 		top: auto !important;
 		left: auto;
+		right: 0px;
+	} */
+	#top {
+		position: fixed !important; 
+		top: 0px!important;
+		left: 0px;
 		right: 0px;
 	}
 	.top-bar,
@@ -1637,6 +1647,12 @@ you can use the generic selector below, but it's slower:
 
 }
 @media (max-width: 568px) {
+	#top {
+		position: fixed !important; 
+		top: 0px!important;
+		left: 0px;
+		right: 0px;
+	}
 	h2 {
 		font-size: 40px;
 	}
